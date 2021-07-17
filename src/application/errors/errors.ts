@@ -1,4 +1,4 @@
-import { parseDomainError } from './errors/domain_errors';
+import { parseDomainError } from './error_handlers/domain_errors';
 
 type ErrorType = 'domain'
 

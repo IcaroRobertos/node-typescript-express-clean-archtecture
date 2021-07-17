@@ -1,5 +1,5 @@
 import { errors } from '@constants/errors';
-import { ErrorResponseType } from '../parse_error';
+import { ErrorResponseType } from '../errors';
 
 const parseType = (type: string) => {
   switch (type) {
