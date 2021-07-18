@@ -1,4 +1,4 @@
-import { errors } from '@constants/errors';
+import { errors } from '@applicationConstants/errors';
 import { ErrorResponseType } from '../errors';
 
 const parseType = (type: string) => {
