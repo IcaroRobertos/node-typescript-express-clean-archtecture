@@ -51,10 +51,13 @@
       "@applicationErrors": ["application/errors/errors"],
       "@config/*": ["infrastructure/config/*"],
       "@entities/*": ["entities/*"],
+      "@httpPort/*": ["infrastructure/ports/http/*"],
+      "@httpRoutes": ["infrastructure/ports/http/routes/__routes__"],
       "@interfaces/*": ["application/interfaces/*"],
       "@postgresDatabase/*": ["infrastructure/gateways/database/postgres/*"],
       "@useCases": ["application/use_cases/use_cases"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@webserver": ["infrastructure/gateways/webserver/express/express"]
     },                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                             /* List of folders to include type definitions from. */
