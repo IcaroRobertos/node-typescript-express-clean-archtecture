@@ -7,7 +7,7 @@ export type ErrorResponseType = {
   type: string
 }
 
-export const parseError = (type: ErrorType, error: any): ErrorResponseType => {
+export const AppError = (type: ErrorType, error: any): ErrorResponseType => {
   switch (type) {
     case 'domain':
       return parseDomainError(error);
