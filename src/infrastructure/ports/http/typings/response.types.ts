@@ -1,4 +1,4 @@
 export type HttpResponse = {
-  httpStatus: number,
+  statusCode: number,
   body: any
 }

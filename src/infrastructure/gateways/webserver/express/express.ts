@@ -15,9 +15,9 @@ const handleRoutes = (appRoutes: Router) => {
   routesDefinitions.forEach(({ prefix, routes }) => {
     routes.forEach(({ controller, method, path }) => {
       appRoutes[method](`${prefix}${path}`, async (req: Request, res: Response) => {
-        const { body, httpStatus } = await controller(httpRequestAdapter(req));
+        const { body, statusCode } = await controller(httpRequestAdapter(req));
 
-        return res.status(httpStatus).send(body);
+        return res.status(statusCode).send(body);
       });
     });
   });
