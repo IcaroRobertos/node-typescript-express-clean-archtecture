@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@applicationConstants/*": ["src/application/constants/*"],
+      "@applicationErrors": ["src/application/errors/errors"],
+      "@config/*": ["src/infrastructure/config/*"],
+      "@dataRepositories/*": ["src/infrastructure/repositories/database/postgres/*"],
+      "@entities/*": ["src/entities/*"],
+      "@httpPort/*": ["src/infrastructure/ports/http/*"],
+      "@httpRoutes": ["src/infrastructure/ports/http/routes/__routes__"],
+      "@interfaces/*": ["src/application/interfaces/*"],
+      "@postgresDatabase/*": ["src/infrastructure/gateways/database/postgres/*"],
+      "@useCases": ["src/application/use_cases/use_cases"],
+      "@utils/*": ["src/utils/*"],
+      "@webserver": ["src/infrastructure/gateways/webserver/express/express"],
+
+      "@mocks/*": ["__mocks__/*"]
+    }
+  }
+}
