@@ -11,7 +11,7 @@ export type UserTypes = {
 const userSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().email().required(),
-  password: Joi.string().alphanum().min(6).required(),
+  password: Joi.string().min(6).required(),
   age: Joi.number().min(18).optional(),
   address: Joi.string().optional(),
 });
