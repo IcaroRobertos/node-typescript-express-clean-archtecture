@@ -50,6 +50,7 @@
       "@applicationConstants/*": ["application/constants/*"],
       "@applicationErrors": ["application/errors/errors"],
       "@config/*": ["infrastructure/config/*"],
+      "@dataRepositories/*": ["infrastructure/repositories/database/postgres/*"],
       "@entities/*": ["entities/*"],
       "@httpPort/*": ["infrastructure/ports/http/*"],
       "@httpRoutes": ["infrastructure/ports/http/routes/__routes__"],

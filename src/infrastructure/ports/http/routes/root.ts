@@ -1,11 +1,13 @@
 import { GET } from '../constants/http';
 import { RouteDefinitionTypes } from '../typings/route.types';
 
+import { rootController } from '../controllers/root.controller';
+
 export const rootRoutes: RouteDefinitionTypes = {
   prefix: '',
   routes: [{
     method: GET,
     path: '/',
-    controller: async (_req) => ({ body: true, httpStatus: 200 }),
+    controller: rootController.root,
   }],
 };
