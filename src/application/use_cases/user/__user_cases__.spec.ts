@@ -23,4 +23,18 @@ describe('test user cases', () => {
       }),
     );
   });
+
+  test('test create user with a invalid data', async () => {
+    const user = fakeUser({ name: '' });
+    try {
+      await createUser(user);
+    } catch (error) {
+      expect(error).toEqual(
+        expect.objectContaining({
+          path: 'name',
+          type: 'REQUIRED',
+        }),
+      );
+    }
+  });
 });

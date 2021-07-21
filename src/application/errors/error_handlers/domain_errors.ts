@@ -5,6 +5,8 @@ const parseType = (type: string) => {
   switch (type) {
     case 'string.min':
       return errors.STRING_MIN_LENGTH;
+    case 'string.empty':
+      return errors.REQUIRED_EMPTY;
     default:
       return type;
   }
