@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../postgres';
 
-export const UserModel = sequelize.define('User', {
+export const UserModel = sequelize.define('user', {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
