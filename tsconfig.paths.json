@@ -15,7 +15,8 @@
       "@utils/*": ["src/utils/*"],
       "@webserver": ["src/infrastructure/gateways/webserver/express/express"],
 
-      "@mocks/*": ["__mocks__/*"]
+      "@mocks/*": ["__mocks__/*"],
+      "@tests/*": ["__tests__/*"]
     }
   }
 }

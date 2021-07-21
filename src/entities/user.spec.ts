@@ -1,14 +1,7 @@
-import faker from 'faker';
+import { fakeUser } from '@tests/fakers/user.faker';
 import { userValidation } from './user';
 
 describe('test user validation', () => {
-  const fakeUser = (params?: any) => ({
-    name: faker.name.findName(),
-    email: faker.internet.email(),
-    password: faker.internet.password(),
-    ...params,
-  });
-
   test('with a valid data', () => {
     const user = fakeUser();
     const { error, value } = userValidation(user);

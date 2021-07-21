@@ -19,7 +19,12 @@ rules:
     import/extensions:
       ["error", "ignorePackages", { "js": "never", "ts": "never" }],
     import/no-extraneous-dependencies:
-      ["error", { "devDependencies": ["**/*.test.ts", "**/*.spec.ts"] }],
+      [
+        "error",
+        {
+          "devDependencies": ["**/*.test.ts", "**/*.spec.ts", "**/*.faker.ts"],
+        },
+      ],
   }
 settings:
   {
